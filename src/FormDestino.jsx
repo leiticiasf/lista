@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "./App.css"
 
 const FormDestino = ({ adicionarDestino }) => {
   const [nome, setNome] = useState('');
@@ -14,20 +13,24 @@ const FormDestino = ({ adicionarDestino }) => {
 
   return (
     <form onSubmit={handleSubmit}>
+   
       <input
         type="text"
+        
         placeholder="Nome do destino"
         value={nome}
         onChange={(e) => setNome(e.target.value)}
       />
       <input
         type="text"
+       
         placeholder="Descrição"
         value={descricao}
         onChange={(e) => setDescricao(e.target.value)}
-      />
+      /> &nbsp;
       <button type="submit">Adicionar Destino</button>
     </form>
+    
   );
 };
 
