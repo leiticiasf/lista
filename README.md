@@ -3,13 +3,21 @@
 Na aula do dia 06/08 nós dividimos  os arquivos dentro de suas respectivas pastas, garantindo assim um código organizado. Também acertamos o código de cada componente presente na aplicação de viagens e usamos o useState para controlar a página atual e lista de destinos. Criamos um componente de Destinos, e “setamos” alguns países com suas descrições e demos a opção de criação de destinos também.
 
 /////////Regras de Negócio Fundamentais
+
 Todos os pontos para calcular distância devem partir do Brasil.
+
 Temos 10 destinos pré-cadastrados. 
+
 Distâncias acima de 200km serão necessários 2 voos. 
+
 Se o voo for inferior a 2 meses a partir de agora é 1500 reais (considerando ida e volta).
+
 Se o voo for igual ou superior a 2 meses a partir de agora, paga 700 reais (considerando ida e volta).
+
 Acima de 2000 Km cada 1 Km adicional custa 1 real a mais no total.
+
 Cada participante adicional adiciona 25% nos custos de estalagem.
+
 
 ///////Lógica do cálculo de distância e custos da viagem.
 Para voos que duram menos de 2 meses será cobrado R$1500,00 (ida e volta).
